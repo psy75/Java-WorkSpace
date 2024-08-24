@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id="dev" class="telusko.SpringDemo.Dev" autowire="byName">
+   <!-- <property name="laptop" ref="lap1"/> -->
+   <!-- <property name="age" value=" 23"/> -->
+   <!-- <constructor-arg value="24"/>-->
+   <!-- <constructor-arg ref="lap1"/>  -->
+         
+       <!--  <property name="com" ref="com" /> -->
+
+</bean>
+<bean id="com" class="telusko.SpringDemo.Laptop" primary="true">
+</bean>
+<bean id="com1" class="telusko.SpringDemo.Desktop">
+</bean>
+</beans>
